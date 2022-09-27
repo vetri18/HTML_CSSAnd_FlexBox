@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang= "en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel= "short icon" href= "../assets/html.jpg">
+        <title>Demo FlexBox</title>  
+        <!-- using class is better than element itself as class name can be changed
+        element may be used multiple times in code and we may not require same attribute
+        at all place-->
+        <link rel="stylesheet" href="../css/stylesheetFlex.css">
+    </head>
+    <body>
+        <header class="headerContainer"><h1>Header- Sample Flexbox</h1></header>
+        <div class= "mainContainer">
+            <section class= "mainContentItem">
+                <article >
+                    <h2>Google Chrome</h2>
+                    <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+                    </article>
+                    
+                    <article >
+                    <h2>Mozilla Firefox</h2>
+                    <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+                    </article>
+                    
+                    <article >
+                    <h2>Microsoft Edge</h2>
+                    <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+                    </article> 
+            </section>
+            <sideBar class="sideBarItem sideBarLeftItem"><div class="center"><p>Left Side Bar</p></div></sideBar>
+            <sideBar class="sideBarItem sideBarRightItem"><div class="center"><p>Right Side Bar</p></div></sideBar>
+        </div>
+        <footer class= "footerContainer">Footer</footer>
+    </body>
+</html>
