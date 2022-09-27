@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang= "en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel= "short icon" href= "../assets/html.jpg">
+        <title>Demo FlexBox</title>  
+        <!-- using class is better than element itself as class name can be changed
+        element may be used multiple times in code and we may not require same attribute
+        at all place-->
+        <style>
+                .head{
+                    display: flex;
+                    flex-flow: row wrap;
+                    align-items: flex-start;
+                    align-content:space-around;
+                    justify-content: space-evenly;
+                    background: #F6F3EB;
+                    padding: 1em;
+                    border-radius: 3px;
+                    max-width: 50em;
+                }
+                .image
+                {
+                    width: 100px;
+                    height:100px;
+                    
+                }
+                .subheading
+                {
+                   flex:1;
+                   order:1;
+                   margin: 0 8px .5em;
+                }
+                .img{
+                    order:0;
+                }
+        </style>
+    </head>
+    <body>
+        <div class= "head">
+            <div class= "img">
+            <img class= "image" src= "../assets/Prime_Video.jpg" alt= "Amazon Prime Videos" >
+              </div>
+            <div class= "subheading">
+                <h3>Amazon Prime Videos</h3>
+                <p>
+                    Enjoy exclusive Amazon Originals as well as popular movies and TV shows. Watch anytime, anywhere. Start your free trial.
+                </p>
+                <div class = "head">
+                    <div class= "img">
+                    <img class= "image" src= "../assets/whatsapp.jpg" alt= "WhatsApp" ></div>
+                    <div class= "subheading">
+                    <h3>WhatsApp</h3>
+                    <p>
+                        We're making shopping on WhatsApp even easier. Now you can easily discover something you'd like to buy from your favorite business by tapping on the new shopping button at the top of chats
+                    </p>
+                </div>
+            </div>
+        </div>   
+     </body>
+    
